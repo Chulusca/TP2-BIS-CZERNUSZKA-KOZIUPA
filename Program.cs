@@ -34,12 +34,12 @@ do{
 
 static Boxeador IngresarBoxeador(){
     
-    string nom = Funciones.IngresarTexto("Ingrese el nombre del Boxeador");
-    string pais = Funciones.IngresarTexto("Ingrese la nacionalidad del Boxeador");
-    int peso = Funciones.IngresarEnteroEnRango("Ingrese el peso del boxeador", 40, 150);
-    int pg = Funciones.IngresarEnteroEnRango("Ingrese la potencia de golpe", 1, 100);
-    int vp = Funciones.IngresarEnteroEnRango("Ingrese la velocidad de las piernas", 1 , 100);
-    int inteligencia = Funciones.IngresarEnteroEnRango("Ingrese la inteligencia del peleador", 1 , 100);
+    string nom = Funciones.IngresarTexto("Ingrese el nombre del Boxeador ");
+    string pais = Funciones.IngresarTexto("Ingrese la nacionalidad del Boxeador ");
+    int peso = Funciones.IngresarEnteroEnRango("Ingrese el peso del boxeador ", 40, 150);
+    int pg = Funciones.GenerarEnteroRandom(1,100);
+    int vp = Funciones.GenerarEnteroRandom(1,100);
+    int inteligencia = Funciones.IngresarEnteroEnRango("Ingrese la inteligencia del peleador ", 1 , 100);
 
     Boxeador boxeador = new Boxeador(nom, pais, peso, pg, vp, inteligencia);
     return boxeador;
